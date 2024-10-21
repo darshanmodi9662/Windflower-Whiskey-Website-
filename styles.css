@@ -1,0 +1,56 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(to bottom right, #4B0033, #6F2C47);
+    /* Aubergine gradient */
+    font-family: 'Impact', sans-serif;
+    /* Using Impact font */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hover-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border: none;
+}
+
+.carousel-item img {
+    height: 400px;
+    /* Set a fixed height for carousel images */
+    object-fit: cover;
+    /* Cover to maintain aspect ratio */
+}
+
+footer {
+    background: #343a40;
+    /* Dark background for the footer */
+}
+
+.social-media-links a {
+    font-size: 24px;
+    /* Icon size */
+    transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+    color: #ffcc00;
+    /* Hover color */
+}
